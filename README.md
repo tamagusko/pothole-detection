@@ -4,14 +4,6 @@ This repository contains the code and models related to the research paper "Opti
 
 The paper delves into the exploration of state-of-the-art computer vision techniques for detecting pavement potholes, comparing the performance of several deep learning models based on the You Only Look Once (YOLO) family. The models were trained and tested on a dataset containing 665 road pavement images with labeled potholes. The findings revealed that YOLOv4 yielded the highest mean average precision (mAP), while YOLOv4-tiny offered the optimal reduced inference time, making it suitable for mobile applications. Additionally, the YOLOv5s model demonstrated potential by showcasing impressive results and ease of implementation and scalability.
 
-## Prerequisites
-
-You need to install the specific version of PyTorch and associated libraries as follows:
-
-```bash
-pip install torch==1.10.2+cu113 torchvision==0.11.3+cu113 torchaudio==0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
-```
-
 ## Installation
 
 1. Clone the repository to your local machine.
