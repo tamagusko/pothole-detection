@@ -1,6 +1,8 @@
-# README: Optimizing Pothole Detection in Pavements: A Comparative Analysis of Deep Learning Models
+# Optimizing Pothole Detection in Pavements: A Comparative Analysis of Deep Learning Models
 
 This repository contains the code and models related to the research paper "Optimizing Pothole Detection in Pavements: A Comparative Analysis of Deep Learning Models" by Tiago Tamagusko and Adelino Ferreira. This paper was presented at the Second International Conference on Maintenance and Rehabilitation of Constructed Infrastructure Facilities in Honolulu, HI, USA, 16–19 August 2023.
+
+## TLDR
 
 The paper delves into the exploration of state-of-the-art computer vision techniques for detecting pavement potholes, comparing the performance of several deep learning models based on the You Only Look Once (YOLO) family. The models were trained and tested on a dataset containing 665 road pavement images with labeled potholes. The findings revealed that YOLOv4 yielded the highest mean average precision (mAP), while YOLOv4-tiny offered the optimal reduced inference time, making it suitable for mobile applications. Additionally, the YOLOv5s model demonstrated potential by showcasing impressive results and ease of implementation and scalability.
 
@@ -8,10 +10,14 @@ The paper delves into the exploration of state-of-the-art computer vision techni
 
 1. Clone the repository to your local machine.
 
+    ```bash
+    git clone https://github.com/tamagusko/pothole-detection.git
+    ```
+
 2. Create a Python virtual environment and activate it:
 
     ```bash
-    python3.8 -m venv my_env_name
+    python -m venv my_env_name
     source my_env_name/bin/activate
     ```
 
