@@ -90,4 +90,4 @@ For issues, bug reports, and pull requests, please use this GitHub page. To cont
 
 ## License
 
-This work is licensed under a [CC-BY-NC-ND-4.0](LICENSE) license. (c) 2023, [Tiago Tamagusko](https://github.com/tamagusko).
+This work is licensed under a [CC-BY-NC-ND-4.0](LICENSE) license. (c) 2023, [Tiago Tamagusko](https://tamagusko.com).
