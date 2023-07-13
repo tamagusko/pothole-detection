@@ -1,0 +1,5 @@
+train: /mnt/data/train/images
+val: /mnt/data/valid/images
+
+nc: 1
+names: ['pothole']

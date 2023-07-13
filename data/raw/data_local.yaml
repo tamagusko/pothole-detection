@@ -1,0 +1,5 @@
+train: /home/t1/repos/potholedetection/data/raw/train/images
+val: /home/t1/repos/potholedetection/data/raw/valid/images
+
+nc: 1
+names: ['pothole']
