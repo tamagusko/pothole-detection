@@ -86,7 +86,7 @@ If you find this repository useful for your research, please cite our paper as f
 
 ## Support
 
-For issues, bug reports, and pull requests, please use this GitHub page. To contact Tiago Tamagusko directly, send an email to <tamagusko@gmail.com>.
+For issues, bug reports, and pull requests, please use this GitHub page. To contact me directly, send an email to <tamagusko@gmail.com>.
 
 ## License
 

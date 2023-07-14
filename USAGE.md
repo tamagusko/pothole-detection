@@ -1,27 +1,37 @@
-# Training YOLO Models
+# TLDR
 
-This README provides instructions on how to train different versions of YOLO on your dataset.
+This README provides instructions on how to train and infer different versions of YOLO on your dataset.
 
 ## YOLOv5
 
-```bash
-python path/to/yolov5/train.py --img 300 --batch 16 --epochs 300 --data path/to/data/data_local.yaml --weights yolov5VERSION.pt --project 'project_name' --name 'run_name'
-```
+Adjust patches and names in path/to/pothole-detection/src/param_train_YOLOv5.yaml
 
-NOTE: Change the VERSION to the specific version of YOLOv5 (n, s, m, l, x).
+```bash
+cd path/to/pothole-detection/
+python python src/yolov5_train.py # train
+python python src/yolov5_inference.py # infer models
+```
 
 ## YOLOv7
 
-```bash
-python path/to/yolov7/train.py --img-size 300 --batch 16 --epochs 300 --cfg  path/to/cfg/training/yolov7.yaml --hyp data/hyp.scratch.custom.yaml --data path/to/data/data_local.yaml --weights yolov7_training.pt --project 'project_name' --name 'run_name'
-```
+Adjust patches and names in path/to/pothole-detection/src/param_train_YOLOv7.yaml
 
-NOTE: Change the VERSION to the specific version of YOLOv7 (yolov7_training.pt) or YOLOv7x (yolov7x_training.pt)
+```bash
+cd path/to/pothole-detection/
+python python src/yolov7_train.py # train
+python python src/yolov7_inference.py # infer models
+```
 
 ## YOLOv8
 
+Adjust patches and names in path/to/pothole-detection/src/param_train_YOLOv8.yaml
+
 ```bash
-python path/to/yolov8/train.py --img 300 --batch 16 --epochs 300 --data path/to/data/data_local.yaml --weights yolov8VERSION.pt --project 'project_name' --name 'run_name'
+cd path/to/pothole-detection/
+python python src/yolov8_train.py # train
+python python src/yolov8_inference.py # infer models
 ```
 
-NOTE: Change the VERSION to the specific version of YOLOv8 (n, s, m, l, x).
+## Support
+
+For issues, bug reports, and pull requests, please use this GitHub page. To contact me directly, send an email to <tamagusko@gmail.com>.
