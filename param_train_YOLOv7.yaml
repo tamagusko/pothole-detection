@@ -1,0 +1,10 @@
+yolo_path: /home/t1/repos/yolov7/
+img_size: 416
+batch: 16
+epochs: 300
+data_path: /home/t1/repos/pothole-detection/data/raw/
+cfg_path: /home/t1/repos/yolov7/cfg/training/yolov7.yaml
+hyp_path: /home/t1/repos/yolov7/data/hyp.scratch.custom.yaml
+versions: ['yolov7', 'yolov7x']
+run_name: test
+
