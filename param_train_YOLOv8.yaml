@@ -6,4 +6,3 @@ data_path: /home/t1/repos/pothole-detection/data/raw/
 project_name: YOLOv8
 run_name: test
 versions: ['n', 's', 'm', 'l', 'x']
-
