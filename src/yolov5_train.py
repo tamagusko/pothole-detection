@@ -1,5 +1,6 @@
 import os
 import subprocess
+
 import yaml
 
 
@@ -16,15 +17,18 @@ def train_yolov5(params):
         subprocess.run(command, shell=True)
 
         os.makedirs(os.path.join(os.getcwd(), 'models'), exist_ok=True)
-        os.system(f'mv {os.getcwd()}/yolov5{version}.pt {os.getcwd()}/models/yolov5{version}.pt')
-        os.system(f'cp {params["project_name"]}/{modified_run_name}/weights/best.pt {os.getcwd()}/models/yolov5{version}_best.pt')
+        os.system(
+            f'mv {os.getcwd()}/yolov5{version}.pt {os.getcwd()}/models/yolov5{version}.pt',
+        )
+        os.system(
+            f'cp {params["project_name"]}/{modified_run_name}/weights/best.pt {os.getcwd()}/models/yolov5{version}_best_pothole.pt',
+        )
 
 
 def main():
-    params = parse_yaml('param_train_YOLOv5.yaml')
+    params = parse_yaml('src/param_YOLOv5.yaml')
     train_yolov5(params)
 
 
 if __name__ == '__main__':
     main()
-
