@@ -17,32 +17,22 @@ def train_yolov8(params):
 
         # Train the model
         results = model.train(
-            data=params['data'],
+            data=os.path.join(params['data_path'], 'data_local.yaml'), 
+            imgsz=params['img_size'],
             epochs=params['epochs'],
-            batch_size=params['batch'],
-            imgsz=params['imgsz'],
+            batch=params['batch'],
+            name=f"{params['run_name']}_{version}",
             save_period=params['save_period'],
-            cache=params['cache'],
             device=params['device'],
+            project=params['project'],
+            exist_ok=True # overwrite existing experiment
         )
-
-        # Save model weights
-        os.makedirs(
-            os.path.join(
-                os.getcwd(), params['project'],
-            ), exist_ok=True,
-        )
-        results.model.save(
-            os.path.join(
-                params['project'], f'yolov8{version}.pt',
-            ),
-        )
-
 
 def main():
-    params = parse_yaml('param_train_YOLOv8.yaml')
+    params = parse_yaml('src/param_YOLOv8.yaml')
     train_yolov8(params)
 
 
 if __name__ == '__main__':
     main()
+
