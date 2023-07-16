@@ -8,7 +8,7 @@ All models have been trained with specific parameters which can be found in the 
 - `src/param_YOLOv7.yaml`
 - `src/param_YOLOv8.yaml`
 
-The naming convention for the models is: `{version}_best_pothole.pt`.
+The naming convention for the models is: `{model}_best_pothole.pt`.
 
 Here is the list of trained models:
 
