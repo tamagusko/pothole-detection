@@ -29,12 +29,12 @@ def train_yolov8(params):
         # Save model weights
         os.makedirs(
             os.path.join(
-            os.getcwd(), params['project'],
+                os.getcwd(), params['project'],
             ), exist_ok=True,
         )
         results.model.save(
             os.path.join(
-            params['project'], f'yolov8{version}.pt',
+                params['project'], f'yolov8{version}.pt',
             ),
         )
 

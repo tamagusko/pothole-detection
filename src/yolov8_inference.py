@@ -17,7 +17,7 @@ def detect_yolov8(params):
         # Load the model
         model = YOLO(
             os.path.join(
-            params['project'], f'yolov8{version}_best.pt',
+                params['project'], f'yolov8{version}_best.pt',
             ),
         )
 
