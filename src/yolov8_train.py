@@ -17,7 +17,7 @@ def train_yolov8(params):
 
         # Train the model
         results = model.train(
-            data=os.path.join(params['data_path'], 'data_local.yaml'), 
+            data=os.path.join(params['data_path'], 'data_local.yaml'),
             imgsz=params['img_size'],
             epochs=params['epochs'],
             batch=params['batch'],
@@ -25,8 +25,9 @@ def train_yolov8(params):
             save_period=params['save_period'],
             device=params['device'],
             project=params['project'],
-            exist_ok=True # overwrite existing experiment
+            exist_ok=True,  # overwrite existing experiment
         )
+
 
 def main():
     params = parse_yaml('src/param_YOLOv8.yaml')
@@ -35,4 +36,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

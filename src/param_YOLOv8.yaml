@@ -1,11 +1,9 @@
 yolo_path: /home/t1/repos/yolov8/
 img_size: 416
-#batch: 32
-#epochs: 300
 batch: 8
 epochs: 1
 data_path: /home/t1/repos/pothole-detection/data/raw/
-save_period: 20
+save_period: 50
 device: 0 # use only first GPU
 project: YOLOv8
 run_name: train_comparison
