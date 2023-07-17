@@ -6,3 +6,4 @@ data_path: /home/t1/repos/pothole-detection/data/raw/
 project_name: YOLOv5
 run_name: train_comparison
 versions: ['n', 's', 'm', 'l', 'x']
+seed: 42

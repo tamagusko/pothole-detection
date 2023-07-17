@@ -13,7 +13,7 @@ def parse_yaml(yaml_file):
 def train_yolov5(params):
     for version in params['versions']:
         modified_run_name = f'{params["run_name"]}_YOLOv5{version}'
-        command = f"python {os.path.join(params['yolo_path'], 'train.py')} --img {params['img_size']} --batch {params['batch']} --epochs {params['epochs']} --data {os.path.join(params['data_path'], 'data_local.yaml')} --weights yolov5{version}.pt --project {params['project_name']} --name {modified_run_name}"
+        command = f"python {os.path.join(params['yolo_path'], 'train.py')} --img {params['img_size']} --batch {params['batch']} --epochs {params['epochs']} --data {os.path.join(params['data_path'], 'data_local.yaml')} --weights yolov5{version}.pt --project {params['project_name']} --name {modified_run_name} --exist-ok --seed {params['seed']}"
         subprocess.run(command, shell=True)
 
         os.makedirs(os.path.join(os.getcwd(), 'models'), exist_ok=True)
