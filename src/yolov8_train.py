@@ -24,6 +24,7 @@ def train_yolov8(params):
             device=params['device'],
             project=params['project'],
             exist_ok=True,  # overwrite existing experiment
+            patience=0,  # disable EarlyStopping
         )
 
 
