@@ -12,10 +12,8 @@ def parse_yaml(yaml_file):
 
 def train_yolov8(params):
     for version in params['versions']:
-        # Load a model
-        model = YOLO(f'yolov8{version}.pt')  # load a pretrained model
+        model = YOLO(f'yolov8{version}.pt')
 
-        # Train the model
         results = model.train(
             data=os.path.join(params['data_path'], 'data_local.yaml'),
             imgsz=params['img_size'],

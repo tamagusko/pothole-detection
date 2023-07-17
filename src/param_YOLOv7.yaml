@@ -8,3 +8,4 @@ hyp_path: /home/t1/repos/yolov7/data/hyp.scratch.custom.yaml
 project_name: YOLOv7
 run_name: YOLOv7_1000_epochs
 versions: ['yolov7', 'yolov7x']
+
