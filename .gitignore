@@ -6,6 +6,7 @@
 
 # Folders to ignore
 bkp/
+wandb/ 
 
 # Mac
 .DS_Store
