@@ -1,6 +1,6 @@
 # PAPER: Optimizing Pothole Detection in Pavements: A Comparative Analysis of Deep Learning Models
 
-This repository contains the code and models related to the research paper "[Optimizing Pothole Detection in Pavements: A Comparative Analysis of Deep Learning Models](https://doi.org/10.3390/engproc2023036011) by Tiago Tamagusko and Adelino Ferreira. This paper was presented at the Second International Conference on Maintenance and Rehabilitation of Constructed Infrastructure Facilities in Honolulu, HI, USA, 16–19 August 2023.
+This repository contains the code and models related to the research paper "[Optimizing Pothole Detection in Pavements: A Comparative Analysis of Deep Learning Models](https://doi.org/10.3390/engproc2023036011)" by Tiago Tamagusko and Adelino Ferreira. This paper was presented at the Second International Conference on Maintenance and Rehabilitation of Constructed Infrastructure Facilities in Honolulu, HI, USA, 16–19 August 2023.
 
 ## TLDR
 
