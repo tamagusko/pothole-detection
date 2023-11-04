@@ -1,5 +1,0 @@
-train: ../pothole-detection/data/raw/train/images
-val: ../pothole-detection/data/raw/valid/images
-
-nc: 1
-names: ['pothole']
